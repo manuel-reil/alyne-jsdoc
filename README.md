@@ -1,26 +1,21 @@
-# Docdash
-[![npm package](https://img.shields.io/npm/v/docdash.svg)](https://www.npmjs.com/package/docdash) [![license](https://img.shields.io/npm/l/docdash.svg)](LICENSE.md)
+# alynejsdoc
 
-A clean, responsive documentation template theme for JSDoc 3.
-
-![docdash-screenshot](https://cloud.githubusercontent.com/assets/447956/13398144/4dde7f36-defd-11e5-8909-1a9013302cb9.png)
-
-![docdash-screenshot-2](https://cloud.githubusercontent.com/assets/447956/13401057/e30effd8-df0a-11e5-9f51-66257ac38e94.jpg)
+A clean, responsive documentation template theme with the Alyne colors for JSDoc 3
 
 ## Example
-See http://clenemt.github.io/docdash/ for a sample demo. :rocket:
+See http://manuel-reil.github.io/alynejsdoc/ for a sample demo. :rocket:
 
 ## Install
 
 ```bash
-$ npm install docdash
+$ npm install alynejsdoc
 ```
 
 ## Usage
 Clone repository to your designated `jsdoc` template directory, then:
 
 ```bash
-$ jsdoc entry-file.js -t path/to/docdash
+$ jsdoc entry-file.js -t path/to/alynejsdoc
 ```
 
 ## Usage (npm)
@@ -36,7 +31,7 @@ In your `jsdoc.json` file, add a template option.
 
 ```json
 "opts": {
-  "template": "node_modules/docdash"
+  "template": "node_modules/alynejsdoc"
 }
 ```
 
@@ -57,7 +52,7 @@ See the config file for the [fixtures](fixtures/fixtures.conf.json) or the sampl
         "plugins/markdown"
     ],
     "opts": {
-        "template": "assets/template/docdash/",
+        "template": "assets/template/alynejsdoc/",
         "encoding": "utf8",
         "destination": "docs/",
         "recurse": true,
@@ -71,11 +66,11 @@ See the config file for the [fixtures](fixtures/fixtures.conf.json) or the sampl
 ```
 
 ## Options
-Docdash supports the following options:
+alynejsdoc supports the following options:
 
 ```
 {
-    "docdash": {
+    "alynejsdoc": {
         "static": [false|true],  // Display the static members inside the navbar
         "sort": [false|true]     // Sort the methods in the navbar
     }
