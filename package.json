@@ -1,7 +1,7 @@
 {
-  "name": "alynejsdoc",
+  "name": "alyne-jsdoc",
   "version": "0.1.0",
-  "description": "A clean, responsive documentation template theme with the Alyne colors for JSDoc 3 inspired by alynejsdoc",
+  "description": "A clean, responsive documentation template theme with the Alyne colors for JSDoc 3 inspired by alyne-jsdoc",
   "main": "publish.js",
   "scripts": {
     "test": "jsdoc -c fixtures/fixtures.conf.json",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/manuel-reil/alynejsdoc.git"
+    "url": "https://github.com/manuel-reil/alyne-jsdoc.git"
   },
   "devDependencies": {
     "jsdoc": "latest",

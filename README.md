@@ -1,21 +1,18 @@
-# alynejsdoc
+# alyne-jsdoc
 
 A clean, responsive documentation template theme with the Alyne colors for JSDoc 3
-
-## Example
-See http://manuel-reil.github.io/alynejsdoc/ for a sample demo. :rocket:
 
 ## Install
 
 ```bash
-$ npm install alynejsdoc
+$ npm install alyne-jsdoc
 ```
 
 ## Usage
 Clone repository to your designated `jsdoc` template directory, then:
 
 ```bash
-$ jsdoc entry-file.js -t path/to/alynejsdoc
+$ jsdoc entry-file.js -t path/to/alyne-jsdoc
 ```
 
 ## Usage (npm)
@@ -31,7 +28,7 @@ In your `jsdoc.json` file, add a template option.
 
 ```json
 "opts": {
-  "template": "node_modules/alynejsdoc"
+  "template": "node_modules/alyne-jsdoc"
 }
 ```
 
@@ -52,7 +49,7 @@ See the config file for the [fixtures](fixtures/fixtures.conf.json) or the sampl
         "plugins/markdown"
     ],
     "opts": {
-        "template": "assets/template/alynejsdoc/",
+        "template": "assets/template/alyne-jsdoc/",
         "encoding": "utf8",
         "destination": "docs/",
         "recurse": true,
@@ -66,11 +63,11 @@ See the config file for the [fixtures](fixtures/fixtures.conf.json) or the sampl
 ```
 
 ## Options
-alynejsdoc supports the following options:
+alyne-jsdoc supports the following options:
 
 ```
 {
-    "alynejsdoc": {
+    "alyne-jsdoc": {
         "static": [false|true],  // Display the static members inside the navbar
         "sort": [false|true]     // Sort the methods in the navbar
     }
