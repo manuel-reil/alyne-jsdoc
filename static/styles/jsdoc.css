@@ -188,7 +188,7 @@ tt, code, kbd, samp {
 #main {
   float: right;
   min-width: 360px;
-  width: calc(100% - 290px);
+  width: calc(100% - 400px);
 }
 
 header {
@@ -215,7 +215,7 @@ section {
 nav {
   float: left;
   display: block;
-  width: 300px;
+  width: 400px;
   /* background: #F3F2F1;  /* gray-1 */
   background: #0B7A7A;  /* brand-petrol-darker */
   overflow: auto;
@@ -304,7 +304,7 @@ nav > h2 > a {
 
 footer {
   color: hsl(0, 0%, 28%);
-  margin-left: 300px;
+  margin-left: 400px;
   display: block;
   padding: 15px;
   font-style: italic;
@@ -709,4 +709,11 @@ span.param-type, .params td .param-type, .param-type dd {
   display: inline-block;
   margin-left: -14px;
   margin-right: 5px;
+}
+
+.spacer {
+  width: 20px;
+  height: 10px;
+  float: left;
+  display: block;
 }
