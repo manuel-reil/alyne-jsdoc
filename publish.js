@@ -302,14 +302,16 @@ function buildMemberNav(items, itemHeading, itemsSeen, linktoFn) {
                 itemsNav += '<li>' + linktoFn('', item.name);
                 itemsNav += '</li>';
             } else if ( !hasOwnProp.call(itemsSeen, item.longname) ) {
-                itemsNav += '<li>' + linktoFn(item.longname, item.name.replace(/^module:/, ''));
+                const spacing = (item.longname.match(/\./g) || []).length;
+                const spacer = '<span class="spacer"></span>';
+                itemsNav +=  '<li>' + spacer.repeat(spacing) + linktoFn(item.longname, item.name.replace(/^module:/, ''));
 
                 if (docdash.static && members.find(function (m) { return m.scope === 'static'; } )) {
                     itemsNav += "<ul class='members'>";
 
                     members.forEach(function (member) {
                         if (!member.scope === 'static') return;
-                        itemsNav += "<li data-type='member'>";
+                        itemsNav += "<li data-type='member'>" + spacer.repeat(spacing+1);
                         itemsNav += linkto(member.longname, member.name);
                         itemsNav += "</li>";
                     });
@@ -321,7 +323,7 @@ function buildMemberNav(items, itemHeading, itemsSeen, linktoFn) {
                     itemsNav += "<ul class='methods'>";
 
                     methods.forEach(function (method) {
-                        itemsNav += "<li data-type='method'>";
+                        itemsNav += "<li data-type='method'>" + spacer.repeat(spacing+1);
                         itemsNav += linkto(method.longname, method.name);
                         itemsNav += "</li>";
                     });
