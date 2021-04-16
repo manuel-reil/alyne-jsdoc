@@ -1,53 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-@font-face {
-  font-family: 'Geomanist-thin';
-  src: url( 'https://static-assets-alyne.firebaseapp.com/assets/fonts/geomanist/geomanist-thin-webfont.eot');
-  src: url( 'https://static-assets-alyne.firebaseapp.com/assets/fonts/geomanist/geomanist-thin-webfont.woff2') format('woff2'),
-       url( 'https://static-assets-alyne.firebaseapp.com/assets/fonts/geomanist/geomanist-thin-webfont.woff') format('woff'),
-       url( 'https://static-assets-alyne.firebaseapp.com/assets/fonts/geomanist/geomanist-thin-webfont.ttf')  format('truetype');
-}
-
-@font-face {
-  font-family: 'Geomanist-extralight';
-  src: url( 'https://static-assets-alyne.firebaseapp.com/assets/fonts/geomanist/geomanist-extralight-webfont.eot');
-  src: url( 'https://static-assets-alyne.firebaseapp.com/assets/fonts/geomanist/geomanist-extralight-webfont.woff2') format('woff2'),
-       url( 'https://static-assets-alyne.firebaseapp.com/assets/fonts/geomanist/geomanist-extralight-webfont.woff') format('woff'),
-       url( 'https://static-assets-alyne.firebaseapp.com/assets/fonts/geomanist/geomanist-extralight-webfont.ttf')  format('truetype');
-}
-
-@font-face {
-  font-family: 'Geomanist-light';
-  src: url( 'https://static-assets-alyne.firebaseapp.com/assets/fonts/geomanist/geomanist-light-webfont.eot');
-  src: url( 'https://static-assets-alyne.firebaseapp.com/assets/fonts/geomanist/geomanist-light-webfont.woff2') format('woff2'),
-       url( 'https://static-assets-alyne.firebaseapp.com/assets/fonts/geomanist/geomanist-light-webfont.woff') format('woff'),
-       url( 'https://static-assets-alyne.firebaseapp.com/assets/fonts/geomanist/geomanist-light-webfont.ttf')  format('truetype');
-}
-
-@font-face {
-  font-family: 'Geomanist-regular';
-  src: url( 'https://static-assets-alyne.firebaseapp.com/assets/fonts/geomanist/geomanist-regular-webfont.eot');
-  src: url( 'https://static-assets-alyne.firebaseapp.com/assets/fonts/geomanist/geomanist-regular-webfont.woff2') format('woff2'),
-       url( 'https://static-assets-alyne.firebaseapp.com/assets/fonts/geomanist/geomanist-regular-webfont.woff') format('woff'),
-       url( 'https://static-assets-alyne.firebaseapp.com/assets/fonts/geomanist/geomanist-regular-webfont.ttf')  format('truetype');
-}
-
-@font-face {
-  font-family: 'Geomanist-book';
-  src: url( 'https://static-assets-alyne.firebaseapp.com/assets/fonts/geomanist/geomanist-book-webfont.eot');
-  src: url( 'https://static-assets-alyne.firebaseapp.com/assets/fonts/geomanist/geomanist-book-webfont.woff2') format('woff2'),
-       url( 'https://static-assets-alyne.firebaseapp.com/assets/fonts/geomanist/geomanist-book-webfont.woff') format('woff'),
-       url( 'https://static-assets-alyne.firebaseapp.com/assets/fonts/geomanist/geomanist-book-webfont.ttf')  format('truetype');
-}
-
-@font-face {
-  font-family: 'Geomanist-medium';
-  src: url( 'https://static-assets-alyne.firebaseapp.com/assets/fonts/geomanist/geomanist-medium-webfont.eot');
-  src: url( 'https://static-assets-alyne.firebaseapp.com/assets/fonts/geomanist/geomanist-medium-webfont.woff2') format('woff2'),
-       url( 'https://static-assets-alyne.firebaseapp.com/assets/fonts/geomanist/geomanist-medium-webfont.woff') format('woff'),
-       url( 'https://static-assets-alyne.firebaseapp.com/assets/fonts/geomanist/geomanist-medium-webfont.ttf')  format('truetype');
-}
-
 * {
   box-sizing: border-box
 }
@@ -268,6 +220,7 @@ nav > ul {
 
 nav > ul > li > a {
   color: white;
+  line-height: 24px;
 }
 
 nav ul ul {
@@ -280,9 +233,13 @@ nav ul ul + ul {
 
 nav ul ul a {
   font-family: 'Open Sans', sans-serif;
-  color: #C5C5C4;
+  color: #FFF;
   font-size: 12px;
   border-left: 1px solid hsl(207, 10%, 86%);
+}
+
+nav ul ul a::before {
+  content: "- ";
 }
 
 nav ul ul a,
@@ -712,7 +669,7 @@ span.param-type, .params td .param-type, .param-type dd {
 }
 
 .spacer {
-  width: 20px;
+  width: 10px;
   height: 10px;
   float: left;
   display: block;
